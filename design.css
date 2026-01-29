@@ -1,0 +1,105 @@
+body { 
+    font-family: sans-serif; 
+    margin: 0; 
+    background-color: #f6f6f6; 
+    color: #202122; 
+    display: flex; 
+    flex-direction: column; 
+    min-height: 100vh; 
+}
+
+header { 
+    background: #fff; 
+    padding: 15px 30px; 
+    border-bottom: 1px solid #a2a9b1; 
+    display: flex; 
+    align-items: center; 
+}
+
+.logo-text, .wiki-logo { 
+    font-size: 28px; 
+    font-family: serif; 
+    font-weight: bold; 
+    margin-right: 15px; 
+    text-decoration: none; 
+    color: black; 
+}
+
+/* Main Layout: Sidebar and Article */
+.main-layout { 
+    display: flex; 
+    flex: 1; 
+}
+
+nav { 
+    width: 200px; 
+    padding: 25px; 
+    background: #f6f6f6; 
+    border-right: 1px solid #a2a9b1; 
+}
+
+nav h3 { 
+    font-size: 0.9em; 
+    color: #54595d; 
+    border-bottom: 1px solid #a2a9b1; 
+    padding-bottom: 5px; 
+}
+
+nav ul { 
+    list-style: none; 
+    padding: 0; 
+}
+
+nav li { 
+    margin-bottom: 10px; 
+    font-size: 0.85em; 
+}
+
+nav a { 
+    color: #0645ad; 
+    text-decoration: none; 
+}
+
+nav a:hover { 
+    text-decoration: underline; 
+}
+
+/* Article/Content Body - Wikipedia Style */
+article { 
+    flex: 1; 
+    background: #fff; 
+    padding: 40px; 
+    line-height: 1.6; 
+}
+
+h1 { 
+    border-bottom: 1px solid #a2a9b1; 
+    font-family: serif; 
+    font-size: 2em; 
+}
+
+h2 { 
+    border-bottom: 1px solid #a2a9b1; 
+    margin-top: 30px; 
+    font-family: serif; 
+}
+
+h3 { 
+    margin-top: 20px; 
+}
+
+.highlight-box { 
+    background-color: #f8f9fa; 
+    border: 1px solid #a2a9b1; 
+    padding: 15px; 
+    margin: 20px 0; 
+}
+
+/* Centered Footer */
+footer { 
+    padding: 15px; 
+    border-top: 1px solid #a2a9b1; 
+    background: #f6f6f6; 
+    font-size: 0.8em; 
+    text-align: center; 
+}

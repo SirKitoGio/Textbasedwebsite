@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Basics - Review Wiki</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+<header><a href="website.html" class="wiki-logo">ReviewPedia</a><div>Keith Speirs' Personal Multimedia Review</div></header>
+<div class="main-layout">
+    <nav>
+        <h3>Navigation</h3>
+        <ul>
+            <li><a href="website.html">Main Page</a></li>
+            <li><a href="chapter1.html">Chapter 1: Intro</a></li>
+            <li><a href="chapter2.html">Chapter 2: Text</a></li>
+            <li><a href="chapter3.html">Chapter 3: Image</a></li>
+            <li><a href="html-lesson.html"><strong>Extra: HTML Basics</strong></a></li>
+        </ul>
+    </nav>
+    <article>
+        <h1>HTML Basics</h1>
+        <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the backbone of any website, providing the structure for content.</p>
+
+        <h2>1. Document Structure</h2>
+        <p>Every HTML5 document should follow this basic skeleton:</p>
+        <div class="code-block">
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Page Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Content goes here --&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </div>
+
+        <h2>2. Common Tags</h2>
+        <ul>
+            <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Defines headings, with H1 being the most important.</li>
+            <li><code>&lt;p&gt;</code>: Defines a paragraph of text.</li>
+            <li><code>&lt;a&gt;</code>: Creates a hyperlink using the <code>href</code> attribute.</li>
+            <li><code>&lt;img&gt;</code>: Embeds an image using the <code>src</code> and <code>alt</code> attributes.</li>
+            <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>: Creates unordered (bulleted) and ordered (numbered) lists.</li>
+        </ul>
+
+        <h2>3. Working with Links</h2>
+        <p>Links are what make the "Hypertext" in HTML. To link to another page in your folder, use:</p>
+        <code>&lt;a href="chapter1.html"&gt;Go to Chapter 1&lt;/a&gt;</code>
+    </article>
+</div>
+<footer>Prepared by: <strong>Keith Alan Speirs</strong> | Section: <strong>204i</strong></footer>
+</body>
+</html>
