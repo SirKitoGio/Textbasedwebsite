@@ -25,7 +25,6 @@ header {
     color: black; 
 }
 
-/* Main Layout: Sidebar and Article */
 .main-layout { 
     display: flex; 
     flex: 1; 
@@ -64,7 +63,6 @@ nav a:hover {
     text-decoration: underline; 
 }
 
-/* Article/Content Body - Wikipedia Style */
 article { 
     flex: 1; 
     background: #fff; 
@@ -93,6 +91,49 @@ h3 {
     border: 1px solid #a2a9b1; 
     padding: 15px; 
     margin: 20px 0; 
+}
+
+.chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.chapter-card {
+    border: 1px solid #a2a9b1;
+    background: #f8f9fa;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.chapter-card:hover {
+    transform: translateY(-5px);
+    background: #ffffff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.chapter-card h3 { 
+    margin-top: 0; 
+    font-family: serif;
+    font-size: 1.2em;
+    border: none; 
+}
+
+.chapter-card p {
+    font-size: 0.9em;
+    color: #54595d;
+}
+
+.chapter-card a { 
+    text-decoration: none; 
+    color: #0645ad; 
+    font-weight: bold; 
+}
+
+.chapter-card a:hover {
+    text-decoration: underline;
 }
 
 footer { 
