@@ -4,11 +4,34 @@
     <meta charset="UTF-8">
     <title>Multimedia & HTML Wiki - Home</title>
     <link rel="stylesheet" href="design.css">
+    <style>
+        /* Specific styles for the landing page grid */
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .chapter-card {
+            border: 1px solid #a2a9b1;
+            background: #f8f9fa;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .chapter-card:hover {
+            transform: translateY(-5px);
+            background: #ffffff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .chapter-card h3 { margin-top: 10px; border: none; }
+        .chapter-card a { text-decoration: none; color: #0645ad; font-weight: bold; }
+    </style>
 </head>
 <body>
 
 <header>
-    <div class="logo-text">ReviewPedia</div>
+    <a href="website.html" class="wiki-logo">ReviewPedia</a>
     <div>Keith Speirs' Personal Multimedia Review</div>
 </header>
 
@@ -16,7 +39,7 @@
     <nav>
         <h3>Navigation</h3>
         <ul>
-            <li><a href="website.html">Main Page</a></li>
+            <li><a href="website.html"><strong>Main Page</strong></a></li>
             <li><a href="chapter1.html">Chapter 1: Intro</a></li>
             <li><a href="chapter2.html">Chapter 2: Text</a></li>
             <li><a href="chapter3.html">Chapter 3: Image</a></li>
@@ -26,33 +49,54 @@
 
     <article>
         <h1>Multimedia and HTML: Overview</h1>
-        <p><strong>Multimedia</strong> is a combination of text, graphic art, sound, animation, and video delivered by computer or other electronic means. It is categorized into two types: <strong>Linear</strong> (not interactive, like a movie) and <strong>Non-linear</strong> (interactive, like a game).</p>
+        
+        <p>Welcome to the <strong>ReviewPedia</strong>. This wiki serves as a comprehensive study guide for the fundamentals of multimedia systems and web development. <strong>Multimedia</strong> is defined as any combination of text, art, sound, animation, and video delivered by computer or electronic means.</p>
 
-        <h3>Categories of Multimedia:</h3>
-        <p><strong>Linear:</strong> Not interactive, this is where users can just watch and everything else happens in a predetermined sequence.</p>
+        <div class="highlight-box">
+            <strong>The Ted Nelson Concept:</strong> The term <em>Hypertext</em> was coined by Ted Nelson around 1965, referring to text that links to other pieces of information, allowing for a non-linear reading experience.
+        </div>
 
-        <p><strong>Non-linear:</strong> Interactive, this is where users can navigate and interact with the content in various ways.</p>
+        <h2>Explore the Review Chapters</h2>
+        <div class="chapter-grid">
+            <div class="chapter-card">
+                <h3>Chapter 1</h3>
+                <p>Introduction to Multimedia, Linear vs. Non-Linear, and VR.</p>
+                <a href="chapter1.html">Start Reading &rarr;</a>
+            </div>
+            <div class="chapter-card">
+                <h3>Chapter 2</h3>
+                <p>Deep dive into Text, Typefaces, Fonts, and Encoding.</p>
+                <a href="chapter2.html">Start Reading &rarr;</a>
+            </div>
+            <div class="chapter-card">
+                <h3>Chapter 3</h3>
+                <p>Bitmaps vs. Vectors, 3D Modeling, and Color Models.</p>
+                <a href="chapter3.html">Start Reading &rarr;</a>
+            </div>
+            <div class="chapter-card">
+                <h3>HTML Basics</h3>
+                <p>Core tags, document structure, and web delivery.</p>
+                <a href="html-lesson.html">Start Reading &rarr;</a>
+            </div>
+        </div>
 
-        <h3>The Power of Multimedia</h3>
-        <p>When you weave together the sensual elements of multimedia, you can electrify the thought processes of people’s minds.</p>
+        <hr style="margin-top: 40px; border: 0; border-top: 1px solid #a2a9b1;">
 
-        <h3>The Core Elements</h3>
+        <h2>Key Definitions</h2>
+        
+        
+        <h3>Linear vs. Non-linear</h3>
         <ul>
-            <li>Text</li>
-            <li>Images</li>
-            <li>Sound</li>
-            <li>Video</li>
-            <li>Animation</li>
+            <li><strong>Linear:</strong> Projects that are not interactive and proceed from beginning to end, like a cinema movie or a <strong>Briefing Product</strong>.</li>
+            <li><strong>Non-linear:</strong> Interactive projects where the user has navigational control, such as games, <strong>Kiosk Products</strong>, and courseware.</li>
         </ul>
-        
-        <h3>Hypertext Concept</h3>
-        <p>The term <strong>Hypertext</strong> refers to text which contains links to other texts, a concept first coined by Ted Nelson around 1965</p>
-        
-        <h3>Web Development (HTML)</h3>
-        <p>To deliver multimedia on the web, we use <strong>HTML</strong> (HyperText Markup Language). It uses "tags" to structure content so that browsers can display text and media correctly.</p>
+
+        <h3>Web Delivery</h3>
+        <p>In modern computing, the primary method for delivering multimedia online is via <strong>HTML</strong> (HyperText Markup Language). By using specific tags, we can weave together the core elements to create an "electrified" user experience.</p>
     </article>
 </div>
 
 <footer>Prepared by: <strong>Keith Alan Speirs</strong> | Section: <strong>204i</strong></footer>
+
 </body>
 </html>

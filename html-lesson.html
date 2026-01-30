@@ -6,7 +6,10 @@
     <link rel="stylesheet" href="design.css">
 </head>
 <body>
-<header><a href="website.html" class="wiki-logo">ReviewPedia</a><div>Keith Speirs' Personal Multimedia Review</div></header>
+<header>
+    <a href="website.html" class="wiki-logo">ReviewPedia</a>
+    <div>Keith Speirs' Personal Multimedia Review</div>
+</header>
 <div class="main-layout">
     <nav>
         <h3>Navigation</h3>
@@ -20,34 +23,49 @@
     </nav>
     <article>
         <h1>HTML Basics</h1>
-        <p>HTML stands for <strong>HyperText Markup Language</strong>. It is the backbone of any website, providing the structure for content.</p>
-
-        <h2>1. Document Structure</h2>
-        <p>Every HTML5 document should follow this basic skeleton:</p>
-        <div class="code-block">
-&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;title&gt;Page Title&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;!-- Content goes here --&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-        </div>
-
-        <h2>2. Common Tags</h2>
+        <p>HTML stands for <strong>HyperText Markup Language</strong>. It is a text markup language (not a programming language) used to tell web browsers how to display and structure a page.</p>
+        <img src="html.png" alt="HTML Document Structure" width="500">
+        <h2>1. Tags vs. Elements</h2>
+        <p>It is important to distinguish between these two fundamental concepts:</p>
         <ul>
-            <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Defines headings, with H1 being the most important.</li>
-            <li><code>&lt;p&gt;</code>: Defines a paragraph of text.</li>
-            <li><code>&lt;a&gt;</code>: Creates a hyperlink using the <code>href</code> attribute.</li>
-            <li><code>&lt;img&gt;</code>: Embeds an image using the <code>src</code> and <code>alt</code> attributes.</li>
-            <li><code>&lt;ul&gt;</code> and <code>&lt;ol&gt;</code>: Creates unordered (bulleted) and ordered (numbered) lists.</li>
+            <li><strong>HTML Tags:</strong> Commands surrounded by angle brackets (<code>&lt;</code> and <code>&gt;</code>) that specify how a document should be formatted.</li>
+            <li><strong>HTML Elements:</strong> The combination of the start tag, the content, and the end tag (e.g., <code>&lt;b&gt;Bold Text&lt;/b&gt;</code>).</li>
         </ul>
 
-        <h2>3. Working with Links</h2>
-        <p>Links are what make the "Hypertext" in HTML. To link to another page in your folder, use:</p>
-        <code>&lt;a href="chapter1.html"&gt;Go to Chapter 1&lt;/a&gt;</code>
+        <h2>2. Core Document Structure</h2>
+        <p>Every HTML5 document requires four core structural tags to function correctly:</p>
+        <ul>
+            <li><code>&lt;html&gt;</code>: The container for the entire document; tells the browser where the HTML starts and ends.</li>
+            <li><code>&lt;head&gt;</code>: Contains "metadata" or header information that is not displayed directly in the browser window (like links to CSS).</li>
+            <li><code>&lt;title&gt;</code>: Defines the text displayed in the browser's title bar or tab.</li>
+            <li><code>&lt;body&gt;</code>: Contains all the visible text, images, and elements of the web page.</li>
+        </ul>
+
+        
+
+        <h2>3. Content & Formatting Tags</h2>
+        <p>These tags are used inside the <code>&lt;body&gt;</code> to organize information:</p>
+        <ul>
+            <li><strong>Headings:</strong> <code>&lt;h1&gt;</code> through <code>&lt;h6&gt;</code> define the hierarchy of your content.</li>
+            <li><strong>Paragraphs:</strong> <code>&lt;p&gt;</code> is used for standard blocks of text.</li>
+            <li><strong>Bold:</strong> <code>&lt;b&gt;</code> is used to display text in a bold font.</li>
+            <li><strong>Lists:</strong> Use <code>&lt;ul&gt;</code> for unordered (bullets) and <code>&lt;ol&gt;</code> for ordered (numbers) lists. Each item is wrapped in an <code>&lt;li&gt;</code> tag.</li>
+        </ul>
+
+        <h2>4. Attributes: Links and Images</h2>
+        <p>Attributes provide additional information about an element and are always found in the start tag.</p>
+        
+        <h3>Hypertext Links</h3>
+        <p>Links are created with the <code>&lt;a&gt;</code> tag. The <code>href</code> attribute specifies the destination URL or file.</p>
+        <div class="highlight-box">
+            <code>&lt;a href="chapter1.html"&gt;Go to Chapter 1&lt;/a&gt;</code>
+        </div>
+
+        <h3>Images</h3>
+        <p>The <code>&lt;img&gt;</code> tag is used to embed visual media. It requires the <code>src</code> (source path) and <code>alt</code> (alternative text) attributes.</p>
+        <div class="highlight-box">
+            <code>&lt;img src="photo.jpg" alt="Description of image" width="500"&gt;</code>
+        </div>
     </article>
 </div>
 <footer>Prepared by: <strong>Keith Alan Speirs</strong> | Section: <strong>204i</strong></footer>
